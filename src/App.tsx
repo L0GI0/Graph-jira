@@ -1,16 +1,7 @@
 import React from "react";
 import "./App.css";
 import { useReadCypher, useWriteCypher } from "use-neo4j";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-  useHistory,
-} from "react-router-dom";
-import { Menu } from "semantic-ui-react";
-import Home from "./views/Home";
-import Movie from "./views/Movie";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MainLayout from "./common/MainLayout";
 import {
   PageHeader,
