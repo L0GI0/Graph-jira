@@ -8,7 +8,13 @@ import reportWebVitals from "./reportWebVitals";
 import { Menu } from "semantic-ui-react";
 import { Neo4jProvider, createDriver } from "use-neo4j";
 
-const driver = createDriver("bolt", "localhost", 7687, "neo4j", "heap123");
+const driver = createDriver(
+  "bolt+s",
+  "db-lqonvrfh8qabyrqyoi90.graphenedb.com",
+  24786,
+  "neo4j",
+  "heap123"
+);
 
 ReactDOM.render(
   <React.StrictMode>
