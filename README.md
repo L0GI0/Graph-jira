@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+## Table of Contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Demo](#demo)
+* [Compatibility](#compatibility)
+* [License](#license)
+* [Contact](#contact)
 
-## Available Scripts
 
-In the project directory, you can run:
+## About The Project
+Simple graph application that helps to manage reported issues by users. Allows to assign available maintainers to specific threads.
+Mainainers can be added through app interface. 
 
-### `yarn start`
+App consits of two views:
+* Users - contains a table of all maintainers, which correspond to *User* GraphDB nodes: <br/> 
+![image](https://user-images.githubusercontent.com/48987014/114276850-c63a2200-9a28-11eb-87f8-558456951e57.png)
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Issues - contains a table of all opened threads, which correspond to *Issue* GraphDB nodes: <br/> 
+![image](https://user-images.githubusercontent.com/48987014/114278017-0d76e180-9a2e-11eb-8b01-41f426505b2e.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Built With
+* [React.js](https://pl.reactjs.org/)
+* [Ant Design](https://ant.design/)
+* [Styled components](https://styled-components.com/)
+* [Neo4j](https://neo4j.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
+Download source files from this repostiory, and use them to host or run the app locally. <br/>
+* **Steps:**
+1. Connect your GraphDB to the project<br />
+2. Host or run the app locally <br />
 
-### `yarn build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The usability of the application comes down to the interface to the database: <br/>
+![image](https://user-images.githubusercontent.com/48987014/114279883-17511280-9a37-11eb-995c-f0b40954af79.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+By default, project provides view for GraphDB that stores two kinds of nodes, which correspond to app views:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://user-images.githubusercontent.com/48987014/114280293-dce87500-9a38-11eb-9019-85e22ec36e26.png)
 
-### `yarn eject`
+Default properies of supported nodes:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* User node properties:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://user-images.githubusercontent.com/48987014/114280387-45cfed00-9a39-11eb-89c4-37074919e7eb.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Issue node properties:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/48987014/114280399-4bc5ce00-9a39-11eb-9e3a-e0729db5071e.png)
 
-## Learn More
+Every *User* node can be related to an *Issue* node as a *AUTHOR* or *ASIGNEE*. Can't be both. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Example of default nodes relations: <br/>
+![image](https://user-images.githubusercontent.com/48987014/114280571-2f766100-9a3a-11eb-9d56-1d441c4468f8.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Demo
+Preview: ![Issuezaur](https://issuezaur.web.app/)
+
+## Compatibility
+Every, commonly used web browsers. 
+
+## License
+Free to use and modify.
+
+## Contact
+Michal Pabjan - michaelpabjan@gmail.com<br />
+Project Link: [https://github.com/L0GI0/Issuezaur](https://github.com/L0GI0/Issuezaur)
