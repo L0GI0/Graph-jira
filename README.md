@@ -60,7 +60,7 @@ Every *User* node can be related to an *Issue* node as a *AUTHOR* or *ASIGNEE*. 
 ![image](https://user-images.githubusercontent.com/48987014/114280571-2f766100-9a3a-11eb-9d56-1d441c4468f8.png)
 
 ## Demo
-Preview: ![Issuezaur](https://issuezaur.web.app/)
+Preview: [Issuezaur](https://issuezaur.web.app/)
 
 ## Compatibility
 Every, commonly used web browsers. 
