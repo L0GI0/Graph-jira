@@ -1,14 +1,16 @@
 ## Table of Contents
 
+* [Demo](#demo)
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Demo](#demo)
 * [Compatibility](#compatibility)
 * [License](#license)
 * [Contact](#contact)
 
+## Demo
+Preview: [Issuezaur](https://issuezaur.web.app/)
 
 ## About The Project
 Simple graph application that helps to manage reported issues by users. Allows to assign available maintainers to specific threads.
@@ -58,9 +60,6 @@ Every *User* node can be related to an *Issue* node as a *AUTHOR* or *ASIGNEE*. 
 
 * Example of default nodes relations: <br/>
 ![image](https://user-images.githubusercontent.com/48987014/114280571-2f766100-9a3a-11eb-9d56-1d441c4468f8.png)
-
-## Demo
-Preview: [Issuezaur](https://issuezaur.web.app/)
 
 ## Compatibility
 Every, commonly used web browsers. 
